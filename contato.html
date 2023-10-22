@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        /* ESTILO PARA CENTRALIZAR O CONTEUDO*/
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 600px; /* DEFINIR LARGURA PARA A CENTRALIZAÇÃO DO CONTEUDO */
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .botao:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Portfólio Pessoal</h1>
+
+        <a href="sobre mim.html" class="botao">Sobre Mim</a>
+        <a href="formacao educacional.html" class="botao">Formações</a>
+        <a href="portfolio.html" class="botao">Meu Portfólio</a>
+        <a href="contato.html" class="botao">Contato</a>
+
+        <h2>Entre em contato</h2>
+            <form action="processar_formulario.php" method="post"> 
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+            <br>
+                <input type="submit" value="Enviar">
+            </form>
+    </div>
+</body>
+</html>
